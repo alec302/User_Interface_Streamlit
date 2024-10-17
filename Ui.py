@@ -3,7 +3,7 @@ import pandas as pd
 import requests
 
 # Base URL for the backend API (Flask)
-BASE_URL = "http://127.0.0.1:5000"
+BASE_URL = "https://aps-3-flask-rest-mongo-alec302-1.onrender.com"
 
 # Helper function to make API requests
 def fazer_requisicao(endpoint, method="GET", params=None, data=None):
