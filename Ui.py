@@ -2,10 +2,8 @@ import streamlit as st
 import pandas as pd
 import requests
 
-# Base URL for the backend API (Flask)
 BASE_URL = "https://aps-3-flask-rest-mongo-alec302-1.onrender.com"
 
-# Helper function to make API requests
 def fazer_requisicao(endpoint, method="GET", params=None, data=None):
     url = f"{BASE_URL}/{endpoint}"
     try:
@@ -38,7 +36,6 @@ def fazer_requisicao(endpoint, method="GET", params=None, data=None):
 st.title("Sistema de Aluguel de Bicicletas")
 st.sidebar.header("Escolha a Função")
 
-# Sidebar for different actions
 action = st.sidebar.selectbox("Ação", [
     "Visualizar Bicicletas", 
     "Gerenciar Bicicletas",
